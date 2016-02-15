@@ -3449,7 +3449,7 @@ declare module rethinkdb {
 
   interface WriteOptions {
     durability?: string;
-    returnChanges?: boolean | RBool;
+    returnChanges?: boolean | RBool | 'always';
     nonAtomic?: boolean | RBool;
   }
 
